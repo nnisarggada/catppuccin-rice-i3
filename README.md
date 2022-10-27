@@ -5,8 +5,8 @@
 Docs coming soon 👀👀
 
 Requirements - 
- autotiling
- bluez
+ 1. autotiling
+ 2. bluez
  bluez-libs
  bluez-utils
  catppuccin-gtk-theme-mocha
