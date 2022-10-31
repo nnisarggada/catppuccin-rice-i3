@@ -8,7 +8,7 @@
 
     notification_limit = 5
 
-    offset = 30x50
+    offset = 25x45
 
     indicate_hidden = true
 
@@ -137,7 +137,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 15
+    corner_radius = 0
 
     ### Legacy
 
@@ -184,7 +184,8 @@
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
-[urgency_critical]
+[urgency_critical]background = "#f38ba8"
+    foreground = "#cdd6f4"
     background = "#1E1E2E"
     foreground = "#CDD6F4"
     frame_color = "#FAB387"
