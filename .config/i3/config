@@ -233,6 +233,8 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="qt5ct"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Pcmanfm"] floating enable
+for_window [class="octopi"] floating enable
+for_window [class="octopi-cachecleaner"] floating enable
 
 
 for_window [class="Spotify"] move to workspace $ws10
@@ -255,8 +257,6 @@ bindsym $mod+e exec pcmanfm
 exec_always xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off
 exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 exec_always picom --experimental-backends
-
-
-#Desktop Setup
 exec_always .config/polybar/launch.sh
 exec_always --no-startup-id dunst
+exec_always clight
