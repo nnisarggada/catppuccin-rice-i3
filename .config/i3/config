@@ -224,7 +224,7 @@ gaps inner 5
 gaps outer 5
 smart_gaps on
 
-for_window [all] border pixel 5
+for_window [all] border pixel 0
 for_window [all] title_format " "
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Blueman-manager"] floating enable
@@ -254,9 +254,10 @@ bindsym $mod+e exec pcmanfm
 
 
 #Startups
+exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off
 exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 exec_always picom --experimental-backends
-exec_always .config/polybar/launch.sh
+exec_always ~/.config/polybar/launch.sh
 exec_always --no-startup-id dunst
-exec_always clight
+exec_always --no-startup-id clight
